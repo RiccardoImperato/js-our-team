@@ -41,7 +41,7 @@ const team = [
 ];
 console.log(team);
 
-// Menbri del team in console e su dom
+// Membri del team su dom
 
 const teamContainer = document.querySelector('.team');
 
@@ -55,8 +55,7 @@ for (let i = 0; i < team.length; i++) {
 
     card.classList.add('card', 'text-center');
     card.append(img);
-
-    nome.classList.add('mt-3', 'fw-bold')
+    nome.classList.add('mt-3', 'fw-bold');
     nome.append(`${team[i].nome}`);
     ruolo.classList.add('mb-3');
     ruolo.append(`${team[i].ruolo}`);
@@ -65,6 +64,5 @@ for (let i = 0; i < team.length; i++) {
     card.append(nome);
     card.append(ruolo);
 
-    console.log(card);
     console.log(team[i]);
 };
